@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.book.mapper.UserInFoMapper">
+  <select id="isExit" resultType="cn.book.model.User">
+  select * from user where userName=#{userName} and userPass=#{userPass}
+  </select>
+  <insert id="insertInFo" parameterType="cn.book.model.User">
+  insert into user(userName,userPass) values(#{userName},#{userPass})
+  </insert>
+</mapper>

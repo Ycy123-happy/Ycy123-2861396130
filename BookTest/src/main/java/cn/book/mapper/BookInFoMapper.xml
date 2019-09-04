@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.book.mapper.BookInFoMapper">
+<insert id="addBook" parameterType="cn.book.model.Book">
+    insert into tb_book(bookNumber,bookName,bookPrice) values(#{bookNumber},#{bookName},#{bookPrice})
+</insert>
+</mapper>
